@@ -1,8 +1,15 @@
 import React from 'react'
 
-const SearchBar = () => {
+const SearchBar = ({onSearch}) => {
     return (
-        <div>SearchBar</div>
+        <div>
+            <input
+                type="text"
+                placeholder="Search for a country..."
+                onChange={(e) => onSearch(e.target.value)}
+                className="search-bar"
+            />
+        </div>
     )
 }
 
