@@ -5,6 +5,7 @@ import CountryDetail from './pages/CountryDetail';
 import Layout from './components/Layout';
 
 function App() {
+
   return (
     <Router>
       <Layout>

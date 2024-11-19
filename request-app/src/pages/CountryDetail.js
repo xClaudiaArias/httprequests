@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import CountryDetails from '../components/CountryDetails'
 import { fetchCountryByCca3 } from '../services/api'
+import Header from '../components/Header'
 
 const CountryDetail = () => {
     let {cca3}  = useParams()
@@ -19,6 +20,9 @@ const CountryDetail = () => {
 
     return (
         <div>
+            <div className="navBar">
+                <Header />
+            </div>
             <CountryDetails country={country} />
         </div>
     )
