@@ -51,3 +51,33 @@
     color: #e5e5e5;
     text-transform: uppercase;
 }
+
+.country-list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.card {
+    text-decoration: none;
+    color: #1e1e1e;
+}
+.country-card {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+    width: 300px;
+    height: 240px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.country-card img {
+    width: inherit;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.country-card h3 {
+    padding-top: 5px;
+}
