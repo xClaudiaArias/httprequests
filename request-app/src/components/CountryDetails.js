@@ -4,12 +4,11 @@ import WorldMap from './WorldMap'
 const CountryDetails = ({country}) => {
 
     if (!country) {
-        return <p>Loading...</p>
+        return <div class="loader"></div>
     }
 
-    console.log(country, ' LALALA')
     return (
-        <div>
+        <div className='countryDetails'>
             <div className='left'>
                 <h1>{country.name.common}</h1>
                 <img src={country.flags.png} alt={country.flags.alt} />
@@ -69,7 +68,11 @@ const CountryDetails = ({country}) => {
                     </div>
                     <div className="infoBox">
                         <p className='label'>CURRENCY</p>
-                        <u>{Object.keys(country.currencies).map(cur => <li>{cur}</li>)}</u>
+                        <ul>
+                            {Object.keys(country.currencies).map((cur, i) => 
+                                <li key={i}>{cur}</li>
+                            )}
+                        </ul>
                     </div>
                     <div className="infoBox">
                         <p className='label'>POPULATION</p>

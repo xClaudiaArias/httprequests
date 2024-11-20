@@ -19,7 +19,7 @@ const CountryDetail = () => {
     }, [cca3])
 
     return (
-        <div>
+        <div className="countryDetail">
             <div className="navBar">
                 <Header />
             </div>

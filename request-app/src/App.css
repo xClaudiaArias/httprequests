@@ -1,6 +1,7 @@
 .home {
     background-color: white;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 0 40px;
 }
 
@@ -80,4 +81,97 @@
 
 .country-card h3 {
     padding-top: 5px;
+}
+
+.countryDetail {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0 40px;
+}
+
+.countryDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countryDetails .right{
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+    height: inherit;
+    margin-top: 42px;
+}
+
+.countryDetails .right .right-one,
+.countryDetails .right .right-two{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.countryDetails .right .right-one p,
+.countryDetails .right .right-two p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.countryDetails .right .right-one .infoBox ul,
+.countryDetails .right .right-two .infoBox ul {
+    list-style-type: none;
+}
+
+.countryDetails .right .right-one .infoBox ul li,
+.countryDetails .right .right-two .infoBox ul li {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.countryDetails .right .right-one .label,
+.countryDetails .right .right-two .label{
+    font-size: 10px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+
+.footer {
+    background-color: white;
+    height: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.footer p {
+    color: #eaeaea;
+}
+
+.footer .socials {
+    display: flex;
+    gap: 10px;
+}
+
+.loader {
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+    background: 
+        var(--_g) 0%   50%,
+        var(--_g) 50%  50%,
+        var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
 }
